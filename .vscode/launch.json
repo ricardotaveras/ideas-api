@@ -9,9 +9,11 @@
       "request": "launch",
       "name": "Launch Program",
       "runtimeExecutable": "npm",
+      "skipFiles": ["<node_internals>/**"],
       "runtimeArgs": ["run-script", "start:debug"],
       "port": 5000,
-      "cwd": "${workspaceFolder}"
+      "cwd": "${workspaceFolder}",
+      "autoAttachChildProcesses": true
     }
   ]
 }
